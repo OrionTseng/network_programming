@@ -1,0 +1,32 @@
+# 编译与 CMake 生成的文件
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 编译产物
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# 调试与日志
+*.log
+*.tmp
+core
+core.*
+
+# 编辑器或 IDE 的本机配置
+.idea/
+.vscode/
+
+# 私密的本地环境配置
+.env
+.env.*
+!.env.example
