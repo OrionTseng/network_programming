@@ -1,32 +1,103 @@
-# 编译与 CMake 生成的文件
+# =========================
+# CMake 与通用构建目录
+# =========================
 build/
+Build/
+bin/
+Bin/
+out/
+dist/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
 cmake-build-*/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
 Makefile
+install_manifest.txt
 
-# 编译产物
+# =========================
+# C / C++ 编译、链接与可执行产物
+# =========================
 *.o
 *.obj
+*.lo
 *.a
+*.lib
 *.so
+*.so.*
 *.dylib
 *.dll
+*.dll.a
 *.exe
 *.out
 
-# 调试与日志
+# 常见默认可执行文件名
+a.out
+a.exe
+
+# macOS 应用程序包：通常是 Xcode 或 CMake 构建产物
+*.app/
+
+# 调试符号、覆盖率与性能分析文件
+*.dSYM/
+*.dSYM.zip
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+
+# =========================
+# macOS 系统与 Xcode 产物
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Finder 可能产生的目录元数据
+._*
+
+# Xcode 构建缓存与个人工作区数据
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# =========================
+# 调试、日志和临时文件
+# =========================
 *.log
 *.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
 core
 core.*
+vgcore.*
 
+# =========================
 # 编辑器或 IDE 的本机配置
+# =========================
 .idea/
 .vscode/
+*.code-workspace
 
+# =========================
 # 私密的本地环境配置
+# =========================
 .env
 .env.*
 !.env.example
